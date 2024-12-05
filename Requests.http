@@ -1,0 +1,46 @@
+GET  http://localhost:8080/SpringBootCrudService/person/1
+Accept: application/json
+
+###
+GET  http://localhost:8080/SpringBootCrudService/person/1
+Accept: application/xml
+
+
+### Get Person by ID (JSON)
+GET http://localhost:8080/SpringBootCrudService/person/2
+Accept: application/json
+
+### Get Person by ID (XML)
+GET http://localhost:8080/SpringBootCrudService/person/2
+Accept: application/xml
+
+###
+POST http://localhost:8080/SpringBootCrudService/person
+Content-Type: application/json
+
+{
+  "id":0,
+  "firstname": "soufiane",
+  "surname": "hammagi"
+}
+
+###
+
+POST http://localhost:8080/SpringBootCrudService/person
+Content-Type: application/xml
+//Accept: application/xml
+
+<Person>
+    <id>0</id>
+    <firstname>Soren</firstname>
+    <surname>Schwerk</surname>
+</Person>
+
+
+### Get Person by ID (JSON)
+GET http://localhost:8080/SpringBootCrudService/person/1
+Accept: application/json
+
+### Get Person by ID (XML)
+GET http://localhost:8080/SpringBootCrudService/person/1
+Accept: application/xml
